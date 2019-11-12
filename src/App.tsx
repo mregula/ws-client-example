@@ -11,7 +11,7 @@ import 'medium-editor/dist/css/medium-editor.css';
 import 'medium-editor/dist/css/themes/default.css';
 import './App.css'
 
-const wsClient = new W3CWebSocket('ws://127.0.0.1:8000');
+const wsClient = new W3CWebSocket('ws://nodejs-express.mregula.now.sh');
 const contentDefaultMessage = "Start writing your document here";
 
 const App: React.FC = () => {
