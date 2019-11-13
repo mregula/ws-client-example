@@ -1,0 +1,11 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+  - url: /
+    application_readable: true
+    static_files: build/index.html
+    upload: build/index.html
+  - url: /
+    application_readable: true
+    static_dir: build
