@@ -102,7 +102,7 @@ const App: React.FC = () => {
     };
 
 
-    wsClient.onmessage = (message) => {
+    wsClient.onmessage = (message: any) => {
       if (typeof message.data === "string") {
         const dataFromServer = JSON.parse(message.data);
 
